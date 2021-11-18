@@ -1,26 +1,26 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <base-color name="purple"></base-color>
+    <!-- <base-color name="blue"></base-color> -->
+    <!-- <base-color name="black"></base-color> -->
+    <!-- <base-color name="white"></base-color> -->
+    <!-- <base-color-old name="white"></base-color-old> -->
+
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import BaseColor from './components/BaseColor.vue'
+// import BaseColorOld from './components/BaseColorOld.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    BaseColor,
+    // BaseColorOld
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped>
 </style>
